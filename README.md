@@ -1,5 +1,5 @@
 # xcode : A javascript Project
-<table><tbody>
+<!-- <table><tbody>
 <tr><td>
 <img src="assets/img/logoblack.jpg" height=350px width=300px />
 </td><td>
@@ -8,4 +8,5 @@
 <img src="assets/img/logoblack.jpg" height=350px width=300px />
 </td>
 </td></tr>
-</tbody></table>
+</tbody></table> -->
+![gif-logo](assets/img/landgiflogo.gif)
