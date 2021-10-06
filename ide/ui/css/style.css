@@ -1,7 +1,7 @@
 *{margin: 0;}
 
 .header {
-    background: #57a958;
+    background: blue;
     text-align: left;
     font-size: 20px;
     font-weight: bold;
@@ -14,12 +14,15 @@
     background: lightgray;
     text-align: right;
     padding: 4px;
-    font-family: sans-serif;
+    font-family: verdana;
 }
 
 .languages {
     background: white;
-    border: 1px solid gray;
+    border: 2px solid black;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
 }
 
 #editor { height: 400px; }
@@ -30,15 +33,17 @@
 }
 
 .btn {
-    background: #57a958;
-    color: white;
+    background: pink;
+    color: black;
     padding: 8px;
-    border: 0;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
 }
 
 .output {
         padding: 4px;
-        border: 2px solid gray;
+        border: 2px solid black;
         min-height: 100px;
         width: 99%;
         resize: none;
