@@ -1,3 +1,6 @@
-<?php
+#include<iostream>
 
-echo "Hellsssssssssssssso";
+int main(){
+    std::cout << "hgeloo";
+    return 0;
+}
