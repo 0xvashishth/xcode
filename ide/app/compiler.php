@@ -26,13 +26,13 @@
         echo $output;
     }
     if($language == "c") {
-        $outputExe = $random . ".exe"
+        $outputExe = $random . ".exe";
         shell_exec("gcc $filePath -o $outputExe");
         $output = shell_exec(__DIR__ . "//$outputExe");
         echo $output;
     }
     if($language == "cpp") {
-        $outputExe = $random . ".exe"
+        $outputExe = $random . ".exe";
         shell_exec("g++ $filePath -o $outputExe");
         $output = shell_exec(__DIR__ . "//$outputExe");
         echo $output;
