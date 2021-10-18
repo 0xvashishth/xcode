@@ -7,6 +7,34 @@ window.onload = function(){
 	editor.session.setMode("ace/mode/c_cpp");
 }
 
+function changetheme(){
+	var themename = $("#themename").val();
+	editor = ace.edit("editor");
+	editor.setTheme("ace/theme/"+themename);
+}
+
+function changeFontSize(){
+	$('.editor').each(function( index ) {
+	 var size = $("#fontsize").val();
+     editor = ace.edit(this);
+     if (size == 15){
+     	editor.setFontSize(15);
+     }
+     else if(size == 20){
+     	editor.setFontSize(20);
+     }
+     else if(size == 25){
+     	editor.setFontSize(25);
+     }
+     else if(size == 30){
+     	editor.setFontSize(30);
+     }
+     else if(size == 35){
+     	editor.setFontSize(35);
+     }
+   });
+}
+
 function changeLanguage(){
 
 	let languege = $("#languages").val();
@@ -15,7 +43,6 @@ function changeLanguage(){
 	else if(languege=='php') editor.session.setMode("ace/mode/php");
 	else if(languege=='python') editor.session.setMode("ace/mode/python");
 	else if(languege=='javascript') editor.session.setMode("ace/mode/javascript");
-	
 }
 
 function executeCode(){

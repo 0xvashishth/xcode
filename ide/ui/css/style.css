@@ -17,7 +17,7 @@
     font-family: verdana;
 }
 
-.languages {
+.languages,.fontsize,.themename {
     background: white;
     border: 2px solid black;
     height: 30px;
