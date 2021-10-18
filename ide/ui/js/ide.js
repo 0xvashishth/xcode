@@ -13,6 +13,12 @@ function changetheme(){
 	editor.setTheme("ace/theme/"+themename);
 }
 
+function fullscreen(){
+	$('.editor').css("height","800px");
+
+}
+// $('.editor').css("height","00px");
+
 function changeFontSize(){
 	$('.editor').each(function( index ) {
 	 var size = $("#fontsize").val();
