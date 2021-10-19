@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Editor</title>
-    <link rel="shortcut icon" type="image" href="images/biglogo.png">
+    <title>Xcode Editor & Compiler</title>
+    <link rel="shortcut icon" type="image" href="assets/images/logowhite.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <!-- This is a navbar section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="http://bhuvasblog.atwebpages.com">
-                <img src="images/biglogo.png" alt="" width="70" height="40" style="border-radius:100px;">
+                <img src="assets/images/biglogo.png" alt="" width="70" height="40" style="border-radius:100px;">
             </a>
             <!-- <a class="navbar-brand" href="#">Xcode</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,12 +47,12 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" data-toggle="modal" href="#contactModal">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -61,32 +61,34 @@
 
     <!-- Go to Editor -->
     <div class="card text-center m-5">
-        <div class="card-header">
-            Go to Editor
+        <div class="card-header bg-secondary">
+            Xcode Editor
         </div>
         <!-- <div class="card-body p-5">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div> -->
-        <iframe src="https://www.programiz.com/cpp-programming/online-compiler/" frameborder="0"
+<!--         <iframe src="https://www.programiz.com/cpp-programming/online-compiler/" frameborder="0"
             style="height: 80vh;"></iframe>
+ -->
 
+         <iframe src="ide/ui/ide.html" title="Ide For Xcode" frameborder="0" style="height: 650px;">
+        </iframe>
     </div>
 
     <h1 class="text-center m-3">Cources</h1>
     <div class="container my-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col my-2">
-                <div class="card h-100" id="cards">
+                <div class="card h-100 " id="cards">
                     <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"
-                        class="card-img-top" alt="..." style="height: 150px; width:300px; margin: 20px auto;">
+                        class="card-img-top" alt="..." style="height: 150px; width:250px; margin:auto;">
                     <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">HTML, CSS and JavaScript work together to form the front-end design of a
-                            website by applying information that affects content, style and interactivity of a site</p>
+                        <h5 class="card-title">Web</h5>
+                        <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/html-quiz.html" class="btn btn-primary button" id="btn1">See More Details</a>
+                        <a href="quizes/html-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
                         <a href="http://bhuvasblog.atwebpages.com/link.html" style="text-decoration: none;">Notes</a>
                     </div>
                 </div>
@@ -94,27 +96,24 @@
             <div class="col my-2">
                 <div class="card h-100" id="cards">
                     <img src="https://download.logo.wine/logo/Python_(programming_language)/Python_(programming_language)-Logo.wine.png"
-                        class="card-img-top" alt="..." style="height: 200px; width:300px; margin:auto;">
+                        class="card-img-top" alt="..." style="height: 150px; width:250px; margin:auto;">
                     <div class="card-body">
                         <h5 class="card-title">Python</h5>
-                        <p class="card-text">Python is a computer programming language often used to build websites and
-                            software, automate tasks, and conduct data analysis</p>
+                        <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/python-quiz.html" class="btn btn-primary button" id="btn1">See More Details</a>
+                        <a href="quizes/python-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
             <div class="col my-2">
                 <div class="card h-100" id="cards">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                        class="card-img-top" alt="..." style="height: 200px; width:200px; margin:auto;">
+                        class="card-img-top" alt="..." style="height: 150px; width:200px; margin:auto;">
                     <div class="card-body">
                         <h5 class="card-title">C++</h5>
-                        <p class="card-text">C++ is one of the most widely-used programming languages in game
-                            development. It has been used to create: games, such as World of Warcraft, Counter-Strike,
-                            and StarCraft</p>
+                        <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/cpp-quiz.html" class="btn btn-primary button" id="btn1">See More Details</a>
+                        <a href="quizes/cpp-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
                         <a href="http://bhuvasblog.atwebpages.com/cpp.php" style="text-decoration: none;">Practice
                             Now</a>
                     </div>
@@ -122,42 +121,38 @@
             </div>
             <div class="col my-2">
                 <div class="card h-100" id="cards">
-                    <img src="images/node-js.png" class="card-img-top" alt="..."
-                        style="height: 130px; width:250px; margin:20px auto;">
+                    <img src="assets/images/node-js.png" class="card-img-top" alt="..."
+                        style="height: 150px; width:250px; margin:auto;">
                     <div class="card-body">
                         <h5 class="card-title">Node.Js</h5>
-                        <p class="card-text">It is used for server-side programming, and primarily deployed for
-                            non-blocking, event-driven servers, such as traditional web sites and back-end API services,
-                            but was originally designed with real-time, push-based architectures in mind.</p>
+                        <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/node_js-quiz.html" class="btn btn-primary button" id="btn1">See More Details</a>
+                        <a href="quizes/node_js-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
             <div class="col my-2">
                 <div class="card h-100" id="cards">
-                    <img src="images/php.png" class="card-img-top" alt="..."
-                        style="height: 170px; width:300px; margin:auto;">
+                    <img src="assets/images/php.png" class="card-img-top" alt="..."
+                        style="height: 150px; width:250px; margin:auto;">
                     <div class="card-body">
                         <h5 class="card-title">Php</h5>
-                        <p class="card-text">PHP (Hypertext Preprocessor) is known as a general-purpose scripting
-                            language that can be used to develop dynamic and interactive websites.</p>
+                        <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/php_quiz.html" class="btn btn-primary button" id="btn1">See More Details</a>
+                        <a href="quizes/php_quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
             <div class="col my-2">
                 <div class="card h-100" id="cards">
-                    <img src="images/c.png" class="card-img-top" alt="..."
-                        style="height: 200px; width:200px; margin:auto;">
+                    <img src="assets/images/c.png" class="card-img-top" alt="..."
+                        style="height: 150px; width:200px; margin:auto;">
                     <div class="card-body">
-                        <h5 class="card-title">C language</h5>
-                        <p class="card-text">C is a general-purpose, procedural computer programming language supporting
-                            structured programming, lexical variable scope, and recursion, with a static type system.
+                        <h5 class="card-title">C</h5>
+                        <p class="card-text">
                         </p>
                         <p id="para1"></p>
-                        <a href="quizes/c_quiz.html" class="btn btn-primary button" id="btn1">See More Details</a>
+                        <a href="quizes/c_quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
@@ -178,9 +173,46 @@
             <p class="text-center text-muted">©2021 | xCode.com</p>
         </footer>
     </div>
+
+<!-- contactModal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/xnqldlgp" method="post"> 
+              <div class="form-group">
+                <label for="formGroupExampleInput" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" name="name" id="formGroupExampleInput" required placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2" aria-describedby="emailHelp" placeholder="Enter Email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="recipient-mobile" class="col-form-label">Mobile No:</label>
+                <input type="text" class="form-control" id="recipient-mobile" aria-describedby="emailHelp" placeholder="Enter Phone No" name="number">
+              </div>
+              <div class="form-group">
+                <label for="concern" class="col-form-label">Elaborate Your Concern:</label>
+                <textarea class="form-control" id="recipient-concern" name="concern" placeholder="Enter Your Concern"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <input type="submit" value="Submit" class="btn btn-danger my-3">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

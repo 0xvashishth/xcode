@@ -26,6 +26,9 @@ function changeFontSize(){
      if (size == 15){
      	editor.setFontSize(15);
      }
+     else if (size == 'normal'){
+     	editor.setFontSize(11);
+     }
      else if(size == 20){
      	editor.setFontSize(20);
      }
