@@ -29,7 +29,7 @@
     background: gray;
     border: 2px solid black;
     height: 30px;
-    width: 90px;
+    width: 100px;
     border-radius: 5px;
 }
 
@@ -40,12 +40,20 @@
     padding: 4px;
 }
 
-.btn {
+.btn1 {
     background: deeppink;
     color: black;
     padding: 8px;
     height: 40px;
     width: 100px;
+    border: 2px solid black;
+}
+
+.btn2 {
+    background: deeppink;
+    color: black;
+    padding: 8px;
+    height: 40px;
     border: 2px solid black;
 }
 
