@@ -12,6 +12,7 @@
 <body>
 
     <!-- <div class="header">IDE </div> -->
+    <div class="container1" id="container1">
     <div class="control-panel">
         Theme:
         <select id="themename" class="themename" onchange="changetheme()">
@@ -43,7 +44,7 @@
             <option value="javascript"> Node JS </option>
         </select>
         &nbsp;
-        <button class="btn btn-primary btn2" onclick="fullscreen();"><i class="material-icons">fullscreen</i></button>
+        <button class="btn btn-primary btn2" id="toggle_fullscreen"><i class="material-icons">fullscreen</i></button>
     </div>
     <div class="editor" id="editor"></div>
 
@@ -52,6 +53,8 @@
     </div>
 
     <div class="output"></div>
+
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/lib/ace.js"></script>

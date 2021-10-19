@@ -1,4 +1,3 @@
-// var fs = require('fs');
 let editor;
 
 window.onload = function(){
@@ -12,12 +11,6 @@ function changetheme(){
 	editor = ace.edit("editor");
 	editor.setTheme("ace/theme/"+themename);
 }
-
-function fullscreen(){
-	$('.editor').css("height","800px");
-
-}
-// $('.editor').css("height","00px");
 
 function changeFontSize(){
 	$('.editor').each(function( index ) {
@@ -102,3 +95,39 @@ function executeCode(){
 
 
 }
+
+$('#toggle_fullscreen').on('click', function(){
+	console.log('edded test');
+  // if already full screen; exit
+  // else go fullscreen
+  if (
+    document.fullscreenElement ||
+    document.webkitFullscreenElement ||
+    document.mozFullScreenElement ||
+    document.msFullscreenElement
+  ) {
+  	$('.editor').css("height","400px");
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+  } else {
+    element = $('.container1').get(0);
+    $('.editor').css("height","800px");
+    $('.output').css("background-color","white");
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    } else if (element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+  }
+});
