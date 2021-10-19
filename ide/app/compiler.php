@@ -22,7 +22,7 @@
     }
     if($language == "python") {
     	rename($filePath, $filePath.".py");
-        $output = shell_exec("C:\Users\Vashishth\AppData\Local\Programs\Python\Python38-32\python.exe $filePath.py 2>&1");
+        $output = shell_exec("python $filePath.py 2>&1");
         echo $output;
     }
     if($language == "c") {
