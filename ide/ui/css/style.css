@@ -17,8 +17,16 @@
     font-family: verdana;
 }
 
-.languages {
+.languages,.fontsize,.themename{
     background: white;
+    border: 2px solid black;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+#fs{
+    background: gray;
     border: 2px solid black;
     height: 30px;
     width: 90px;
@@ -33,7 +41,7 @@
 }
 
 .btn {
-    background: pink;
+    background: deeppink;
     color: black;
     padding: 8px;
     height: 40px;

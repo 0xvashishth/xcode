@@ -10,8 +10,28 @@
 
     <div class="header">IDE </div>
     <div class="control-panel">
-        Select Language:
-        &nbsp; &nbsp;
+        Theme:
+        <select id="themename" class="themename" onchange="changetheme()">
+            <option value="monokai"> Monokai </option>
+            <option value="xcode"> xcode </option>
+            <option value="nord_dark"> Nord_dark </option>
+            <option value="eclipse"> Eclipse </option>
+            <option value="solarized_dark"> Solarized_dark </option>
+            <option value="solarized_light"> Solarized_light </option>
+            <option value="kr_theme"> Kr_theme </option>
+        </select>
+        &nbsp;
+        FontSize:
+        <select id="fontsize" class="fontsize" onchange="changeFontSize()">
+            <option> Normal </option>
+            <option value="15"> 15 </option>
+            <option value="20"> 20 </option>
+            <option value="25"> 25 </option>
+            <option value="30"> 30 </option>
+            <option value="35"> 35 </option>
+        </select>
+        &nbsp;
+        Language:
         <select id="languages" class="languages" onchange="changeLanguage()">
             <option value="c"> C </option>
             <option value="cpp"> C++ </option>
@@ -19,6 +39,8 @@
             <option value="python"> Python </option>
             <option value="javascript"> Node JS </option>
         </select>
+        &nbsp;
+        <button id="fs" class="fs" onclick="fullscreen();">FullScreen</button>
     </div>
     <div class="editor" id="editor"></div>
 
@@ -30,7 +52,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/lib/ace.js"></script>
-    <script src="js/lib/theme-monokai.js"></script>
     <script src="js/ide.js"></script>
 
 </body>
