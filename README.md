@@ -26,7 +26,7 @@
 
 ---
 
-![gif-logo](assets/img/landgiflogo.gif)
+![gif-logo](assets/images/landgiflogo.gif)
 
 --- 
 
