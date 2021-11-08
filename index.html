@@ -61,8 +61,8 @@
 
     <!-- Go to Editor -->
     <div class="card text-center m-5">
-        <div class="card-header bg-secondary">
-            Xcode Editor
+        <div class="card-header" style="background-color : #212529;">
+            <div class="text-light">Xcode Editor</div>
         </div>
         <!-- <div class="card-body p-5">
             <h5 class="card-title">Special title treatment</h5>
@@ -77,7 +77,7 @@
         </iframe>
     </div>
 
-    <h1 class="text-center m-3">Cources</h1>
+    <h1 class="text-center m-3">Courses</h1>
     <div class="container my-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col my-2">
@@ -88,7 +88,7 @@
                         <h5 class="card-title">Web</h5>
                         <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/html-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
+                        <a href="#htmlquizModal"  data-toggle="modal"class="btn btn-primary" id="btn1">Take Quiz</a>
                         <a href="http://bhuvasblog.atwebpages.com/link.html" style="text-decoration: none;">Notes</a>
                     </div>
                 </div>
@@ -170,9 +170,31 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
             </ul>
-            <p class="text-center text-muted">©2021 | xCode.com</p>
+            <p class="text-center text-muted">©2021 | Xcode</p>
         </footer>
     </div>
+<!-- html quiz -->
+
+
+    <div class="modal fade" id="htmlquizModal" tabindex="-1" role="dialog" aria-labelledby="htmlquizModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="htmlquizModalLabel">Html Quiz</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <iframe src="quizes/html-quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+        </iframe>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 <!-- contactModal -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
