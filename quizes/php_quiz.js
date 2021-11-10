@@ -69,9 +69,14 @@ function showProgress() {
 
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    gameOverHTML += 
+    `
+            <h3>Your scores: ${quiz.score}/${questions.length}</h3>
+            <button class="btn btn-primary" onclick="location.reload()">Play Again</button>
+        `;
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
+    element.style.marginLeft = '15vh';
 };
 
 // create questions here

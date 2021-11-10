@@ -102,7 +102,7 @@
                         <h5 class="card-title">Python</h5>
                         <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/python-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
+                        <a href="#pythonquizModal" data-toggle="modal" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                         <h5 class="card-title">C++</h5>
                         <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/cpp-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
+                        <a href="#cppquizModal" class="btn btn-primary" data-toggle="modal" id="btn1">Take Quiz</a>
                         <a href="http://bhuvasblog.atwebpages.com/cpp.php" style="text-decoration: none;">Practice
                             Now</a>
                     </div>
@@ -128,7 +128,7 @@
                         <h5 class="card-title">Node.Js</h5>
                         <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/node_js-quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
+                        <a href="#nodejsquizModal" data-toggle="modal" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
@@ -137,10 +137,10 @@
                     <img src="assets/images/php.png" class="card-img-top" alt="..."
                         style="height: 150px; width:250px; margin:auto;">
                     <div class="card-body">
-                        <h5 class="card-title">Php</h5>
+                        <h5 class="card-title">PHP</h5>
                         <p class="card-text"></p>
                         <p id="para1"></p>
-                        <a href="quizes/php_quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
+                        <a href="#phpquizModal" data-toggle="modal" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                         <p class="card-text">
                         </p>
                         <p id="para1"></p>
-                        <a href="quizes/c_quiz.html" class="btn btn-primary" id="btn1">Take Quiz</a>
+                        <a href="#cquizModal" data-toggle="modal" class="btn btn-primary" id="btn1">Take Quiz</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,6 @@
     </div>
 <!-- html quiz -->
 
-
     <div class="modal fade" id="htmlquizModal" tabindex="-1" role="dialog" aria-labelledby="htmlquizModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -185,7 +184,7 @@
             <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
           </div>
           <div class="modal-body">
-            <iframe src="quizes/html-quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+            <iframe src="quizes/html_quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
         </iframe>
         <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -195,7 +194,103 @@
       </div>
     </div>
 
+<!-- c quiz -->
 
+    <div class="modal fade" id="cquizModal" tabindex="-1" role="dialog" aria-labelledby="cquizModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cquizModalLabel">C Quiz</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <iframe src="quizes/c_quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+        </iframe>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- php quiz -->
+
+    <div class="modal fade" id="phpquizModal" tabindex="-1" role="dialog" aria-labelledby="phpquizModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="phpquizModalLabel">PHP Quiz</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <iframe src="quizes/php_quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+        </iframe>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- python quiz -->
+    <div class="modal fade" id="pythonquizModal" tabindex="-1" role="dialog" aria-labelledby="pythonquizModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pythonquizModalLabel">python Quiz</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <iframe src="quizes/python_quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+        </iframe>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cpp quiz -->
+    <div class="modal fade" id="cppquizModal" tabindex="-1" role="dialog" aria-labelledby="cppquizModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pythonquizModalLabel">cpp Quiz</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <iframe src="quizes/cpp_quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+        </iframe>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- node js quiz -->
+    <div class="modal fade" id="nodejsquizModal" tabindex="-1" role="dialog" aria-labelledby="nodejsquizModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pythonquizModalLabel">node js Quiz</h5>
+            <img src="assets/images/logowhite.jpg" class="logi" height="50" width="80">
+          </div>
+          <div class="modal-body">
+            <iframe src="quizes/node_js_quiz.html" title="Ide For Xcode" frameborder="0" style="height: 600px; width: 470px ">
+        </iframe>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- contactModal -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">

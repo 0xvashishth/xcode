@@ -81,21 +81,18 @@ function showScores() {
  
 // create questions here
 var questions = [
-    new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
-    new Question("HTML uses..",["User defined tags","Pre-specified tags","Fixed tags defined by the language","Tags only for linking"],"Fixed tags defined by the language"),
-    new Question("What should be the first tag in any HTML document?",["head","title","html","document"],"html"),
-    new Question("Which tag inserts a line horizontally on your web page?", ["hr","line","line directio","tr"], "hr"),
-    new Question("How can you make a numbered list?", ["dl", "ol", "list","ul" ], "ol"),
-    new Question("Choose the correct HTML tag to make a text italic.",["ii", "italics", "italic", "i"], "i"),
-    new Question("Which attribute is used to name an element uniquely?",  ["class", "id", "dot", "all of above"], "id"),
-    new Question("Which is correct for create a blank line in web page?.", ["press Enter two times", "press Shift + Enter", "insert br tag", "insert <BLINE>"], "insert br tag"),
-    new Question("HTML supports... ", ["ordered lists", "unordered lists", "both type of lists","does not support those types"], "both type of lists") ,
-    new Question("A webpage displays a picture. What tag was used to display that picture?", ["picture", "mage", "img", "src"], "img"),
-    new Question("Which attribute you’ll use with TD tag to merge two cells horizontally?", ["merge=colspan2", "rowspan=2", "colspan=2", "merge=row2"], "colspan=2"),
-    new Question("b tag makes the enclosed text bold. What is other tag to make text bold?", ["strong tag", "dar tag", "black tag", "emp tag" ], "strong tag"),
-    new Question("HTML web pages can be read and rendered by ___.", ["Compiler","Server", "Web Browser","Interpreter"], "Web Browser"),
-    new Question("Which HTML tag produces the biggest heading?", ["h7","h9", "h4","h1"],"h1"),
-    new Question("Which of the following tags do not require a terminator?", ["u", "br", "b","none of the above"], "br")
+    new Question("What is a correct syntax to output 'Hello World' in C++?", ['echo "Hello World";','cout<<"Hello World";','echo("Hello World)";','p("Hello World)";'],'cout<<"Hello World";'),
+    new Question("C++ is an alias of C#", ["True","False","Can not Say","None"], "False"),
+    new Question("Which data type is used to create a variable that should store text?", ["Txt","String","string", "myString"], "string"),
+    new Question("How do you create a variable with the numeric value 5?", ['int x = 5;','double x = 5;','num x = 5;','x = 5;'],'int x = 5;'),
+    new Question("How do you create a variable with the floating number 2.8?", ['byte x = 2.8;','double x = 2.8;','int x = 2.8;','x = 2.8;'],'double x = 2.8;'),
+    new Question("Which method can be used to find the length of a string?", ["length()","getLength()",'len()','getSize();'],"length()"),
+    new Question("The value of a string variable can be surrounded by single quotes.", ["True","False","Can not Say", "None"], "False"),
+    new Question("Which header file lets us work with input and output objects?", ['#include<iostream>','#include<iostring>','#include<inputstr>','#include<stram>'],'#include<iostream>'),
+    new Question("To declare an array in C++, define the variable type with:", ['{}','()','None','[]'],'[]'),
+    new Question("Array indexes start with:", ["0", "-1","1", "2"], "0"),
+    new Question("How do you create a function in C++?", ["functionName.", "functionName[]",'(functionName)', 'functionName()'],'functionName()'),
+    new Question("Which keyword is used to create a class in C++?", ["className", "myClass","class", "class()"], "class")
 ];
  
 // create quiz
